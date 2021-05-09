@@ -188,7 +188,8 @@ class FlutterCallKit {
           return null;
         }
 
-        return _performAnswerCallAction(call.arguments.cast<String, dynamic>()["callUUID"]);
+        return _performAnswerCallAction(
+            call.arguments.cast<String, dynamic>()["callUUID"]);
       case "performEndCallAction":
         if (_performEndCallAction == null) {
           return null;
